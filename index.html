@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Takoyaki Menu</title>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <h1 id="title">Octo Takoyaki Survey Form</h1>
+    <p id="description">We would like to know what you think about our Takoyaki</p>
+    <form id="survey-form" method="post" action="">
+       <fieldset>
+        <label for="name" id="name-label">Enter Your Name: <input id="name" name="name" type="text" required placeholder="Juan Dela Cruz"/></label>
+        <label for="email"id="email-label">Enter Your Email: <input id="email" name="email" type="email" required placeholder="example@email.com"/></label>
+        <label for="number" id="number-label">Input your age (years): <input id="number" type="number" name="number" min="7" max="120" placeholder="23"/></label>
+      </fieldset>
+      <fieldset>
+        <label>Choose your favorite <strong>Takoyaki</strong> flavor</label>
+        <label for="octo"><input id="octo" type="radio" name="takoyaki-flavor" class="inline" value="octo"/> Octo</label>
+        <label for="crab"><input id="crab" type="radio" name="takoyaki-flavor" class="inline" value="crab"/> Crab</label>
+        <label for="ham-cheese"><input id="ham-cheese" type="radio" name="takoyaki-flavor" class="inline" value="ham-cheese"/> Ham & Cheese</label>
+      </fieldset>
+      <fieldset>
+        <label>Choose your favorite <strong>Milktea</strong> flavors</label>
+        <label for="chocolate">
+          <input id="chocolate" type="checkbox" required name="milktea-flavors" class="inline" value="chocolate"/> Chocolate
+        </label>
+        <label for="caramel-sugar">
+          <input id="caramel-sugar" type="checkbox" required name="milktea-flavors" class="inline" value="caramel-sugar"/> Caramel Sugar
+        </label>
+        <label for="winter-melon">
+          <input id="winter-melon" type="checkbox" required name="milktea-flavors" class="inline" value="winter-melon"/> Winter Melon
+        </label>
+        <label for="black-forest">
+          <input id="black-forest" type="checkbox" required name="milktea-flavors" class="inline" value="black-forest"/> Black Forest
+        </label>
+        <label for="cookies-and-cream">
+          <input id="cookies-and-cream" type="checkbox" required name="milktea-flavors" class="inline" value="cookies-and-cream"/> Cookies and Cream
+        </label>
+        <label for="taro">
+          <input id="taro" type="checkbox" required name="milktea-flavors" class="inline" value="taro"/> Taro
+        </label>
+        <label for="matcha">
+          <input id="matcha" type="checkbox" required name="milktea-flavors" class="inline" value="matcha"/> Matcha
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">How did you hear about us?
+          <select id="dropdown" name="dropdown">
+            <option value="">(select one)</option>
+            <option value="1">Neighborhood</option>
+            <option value="2">Friend</option>
+            <option value="3">Facebook</option>
+            <option value="4">Instagram</option>
+            <option value="5">Other</option>
+          </select>
+        </label>
+        <label for="bio">Comments and Suggestions:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="You can suggest additional flavors for Takoyaki or Milktea"></textarea>
+        </label>
+      </fieldset>
+      <input id="submit" type="submit" value="Submit" />
+    </form>
+  </body>
+</html>
